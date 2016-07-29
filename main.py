@@ -61,8 +61,8 @@ class GameOfColors( TwoPlayersGame ):
             self.first_move = False
         else:
             points = []
-            for i in range(self.shape[0]):
-                for j in range(self.shape[1]):
+            for i in range(1, self.shape[0]+1):
+                for j in range(1, self.shape[1]+1):
                     neibs = self.find_neighbors((i, j))
                     if self.map[(i, j)] == 0 and one_neib(neibs) and have_one_color(neibs):
                        points += [' '.join([str(i), str(j), str(c)]) for c in COLORS - set(neibs)]
