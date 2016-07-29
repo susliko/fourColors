@@ -2,7 +2,7 @@ import numpy as np
 
 from easyAI import TwoPlayersGame, Human_Player, AI_Player, Negamax
 
-#by Andrey and I
+#by Andrey and Tosha 
 
 COLORS = {1, 2, 3 ,4}
 
