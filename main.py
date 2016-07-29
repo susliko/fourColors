@@ -2,7 +2,7 @@ import numpy as np
 
 from easyAI import TwoPlayersGame, Human_Player, AI_Player, Negamax
 
-#Андрей Ультра Про Прогер написал это
+#by Andrey
 
 COLORS = {1, 2, 3 ,4}
 
@@ -13,7 +13,7 @@ def have_one_color(neighbors):
     return set(neighbors) != COLORS
 
 
-#Переработка ввода в наш формат
+#Input formating
 def proces_input(inp):
     words = inp.split()
     return [(int(words[0]), int(words[1])), int(words[2])]
