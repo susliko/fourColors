@@ -39,8 +39,10 @@ class GameOfColors( TwoPlayersGame ):
             self.map[(self.shape[0]+1, j)] = list(COLORS)[3]
 
     def generate_first_points(self):
-        p1 = [' '.join([str(i), str(j), str(c)]) for c in COLORS for i in  range(1, self.shape[0]+1) for j in [1, self.shape[1]]]
-        p2 = [' '.join([str(i), str(j), str(c)]) for c in COLORS for i in  [1, self.shape[0]] for j in range(1, self.shape[1]+1)]
+        p1 = [' '.join([str(i), str(j), str(c)]) 
+                                        for c in COLORS for i in  range(1, self.shape[0]+1) for j in [1, self.shape[1]]]
+        p2 = [' '.join([str(i), str(j), str(c)]) 
+                                        for c in COLORS for i in  [1, self.shape[0]] for j in range(1, self.shape[1]+1)]
         return p1 + p2
 
     def is_inside(self, point):
